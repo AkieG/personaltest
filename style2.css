@@ -1,0 +1,101 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: black;
+    background-image: url(fictionalbackground.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+    transition: background-image 0.5s ease;
+}
+
+select {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: inherit; 
+}
+
+h1 {
+    color: darkblue;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-shadow: -1px -1px 0 darkgoldenrod, 1px -1px 0 darkgoldenrod, -1px 1px 0 darkgoldenrod, 1px 1px 0 darkgoldenrod;
+}
+
+.player-stats {
+    width: 90%; 
+    max-width: 500px; 
+    margin: 50px auto;
+    padding: 10px;
+    border-radius: 15px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 0px 0px 5px 0px gray;
+    list-style-type: none;
+    color: black;
+    text-align: left;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+h2 {
+    color: wheat;
+    text-align: center;
+    border-radius: 15px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px 0 #333;
+}
+
+p,
+pre {
+    background-color: black;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 10px;
+}
+
+pre{
+    list-style: none;
+}
+
+
+button {
+    text-align: center;
+    margin: 10px;
+    background-color: wheat;
+    font-size: 14px;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/* Media queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    h1 {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .player-stats {
+        margin: 20px auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    h1 {
+        font-size: 24px;
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    .player-stats {
+        width: 95%;
+        margin: 10px auto;
+    }
+}
